@@ -55,7 +55,7 @@ int main(int argc, char *agrv[]){
     }
 
     while(1){
-        bzero(buffer , 256);
+        bzero(buffer, 256);
         n= read(newsockfd, buffer, 255);
         if(n<0){
             error("Error on reading");
